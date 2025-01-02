@@ -3,6 +3,7 @@
 import { ActionButton } from "./action-button";
 import BackgroundStars from "@/assets/stars.png";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 import { useRef } from "react";
 
 export function HeroSection() {
@@ -114,7 +115,12 @@ export function HeroSection() {
             smart technology meets user-friendly SEO tools.
           </p>
           <div className={"flex justify-center mt-5"}>
-            <ActionButton label={"SIGN UP FOR DEMO"} className="text-xl py-4 px-8" />
+            <Link href={"https://www.hellotrace.io/request-a-demo"}>
+              <ActionButton
+                label={"SIGN UP FOR DEMO"}
+                className="text-xl py-4 px-8"
+              />
+            </Link>
           </div>
         </div>
       </motion.section>

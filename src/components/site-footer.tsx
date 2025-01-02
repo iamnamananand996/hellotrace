@@ -92,7 +92,7 @@ export default function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="https://www.hellotrace.io/blog"
                   className="hover:opacity-80 text-muted-foreground"
                 >
                   Blog
@@ -108,7 +108,7 @@ export default function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="https://traceio.notion.site/Open-Roles-at-Trace-0d02d8d813414fb6bac4e930b847c8de"
                   className="hover:opacity-80 text-muted-foreground"
                 >
                   Careers
@@ -124,7 +124,7 @@ export default function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="https://www.hellotrace.io/privacy-policy"
                   className="hover:opacity-80 text-muted-foreground"
                 >
                   Privacy Policy

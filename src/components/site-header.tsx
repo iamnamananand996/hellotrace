@@ -38,7 +38,7 @@ export default function SiteHeader() {
                   Product
                 </Link>
                 <Link
-                  href={"#"}
+                  href={"https://www.hellotrace.io/blog"}
                   className={"text-white/70 hover:text-white transition"}
                 >
                   Blog
@@ -50,7 +50,7 @@ export default function SiteHeader() {
                   Pricing
                 </Link>
                 <Link
-                  href={"#"}
+                  href={"https://www.hellotrace.io/company"}
                   className={"text-white/70 hover:text-white transition"}
                 >
                   Company
@@ -58,7 +58,9 @@ export default function SiteHeader() {
               </nav>
             </section>
             <section className={"flex max-md:gap-4 items-center"}>
-              <ActionButton label={"TRY TRACE"} />
+              <Link href={"https://www.hellotrace.io/request-a-demo"}>
+                <ActionButton label={"TRY TRACE"} />
+              </Link>
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger>
                   <MenuIcon
