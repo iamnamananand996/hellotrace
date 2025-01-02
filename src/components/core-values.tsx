@@ -17,7 +17,7 @@ interface ValueCardProps {
 function ValueCard({ icon, title, description }: ValueCardProps) {
   return (
     <div className="rounded-lg border border-white/10 bg-[#1E1E2E] p-6 backdrop-blur-sm">
-      <div className="mb-4 inline-block rounded-full bg-gradient-to-br from-pink-500 to-purple-600 p-2 text-white">
+      <div className="mb-4 inline-block rounded-full bg-gradient-to-br from-purple-400 to-purple-600 p-2 text-white">
         {icon}
       </div>
       <h3 className="mb-3 text-xl font-semibold text-white">{title}</h3>
@@ -65,7 +65,7 @@ export default function CoreValues() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 text-center">
           <div className="mb-4 inline-block rounded-full bg-purple-900/50 p-3">
-            <ThumbsUp className="h-6 w-6 text-pink-400" />
+            <ThumbsUp className="h-6 w-6 text-purple-300" />
           </div>
           <h2 className="mb-4 text-4xl font-bold text-white">Core Values</h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-300">

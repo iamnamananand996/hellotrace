@@ -9,7 +9,7 @@ export default function VisionMission() {
           <div className="space-y-6">
             <h1 className="text-4xl font-extrabold text-white md:text-5xl lg:text-6xl">
               We are building{" "}
-              <span className="bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#EC4899] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#9444c9] bg-clip-text text-transparent">
                 customer feedback intelligence Towards Thoughtful Data-Centric
                 Organization
               </span>
