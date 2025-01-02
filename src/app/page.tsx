@@ -6,6 +6,12 @@ import { Testimonials } from "@/components/testimonials";
 import LoomVideo from "@/components/loom-video";
 import FAQSection from "@/components/faq";
 import HowItWorks from "@/components/how-it-work";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "HelloTrace | Welcome",
+  description: "Align and Drive Metrics",
+};
 
 export default function Home() {
   return (
