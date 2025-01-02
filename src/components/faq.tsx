@@ -27,23 +27,25 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <div className="rounded-lg bg-white shadow-[0px_0px_20px_#8c45ff] hover:shadow">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-6 py-4 text-left flex justify-between items-center gap-4"
-      >
-        <span className="text-black font-medium">{question}</span>
-        {isOpen ? (
-          <ChevronUp className="h-5 w-5 text-gray-950" />
-        ) : (
-          <ChevronDown className="h-5 w-5 text-gray-950" />
+    <div className="bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 rounded-lg p-0.5">
+      <div className="rounded-lg bg-white shadow-[0px_0px_20px_#8c45ff] hover:shadow">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-full px-6 py-4 text-left flex justify-between items-center gap-4"
+        >
+          <span className="text-black font-medium">{question}</span>
+          {isOpen ? (
+            <ChevronUp className="h-5 w-5 text-gray-950" />
+          ) : (
+            <ChevronDown className="h-5 w-5 text-gray-950" />
+          )}
+        </button>
+        {isOpen && (
+          <div className="px-6 pb-4">
+            <p className="text-gray-950">{answer}</p>
+          </div>
         )}
-      </button>
-      {isOpen && (
-        <div className="px-6 pb-4">
-          <p className="text-gray-950">{answer}</p>
-        </div>
-      )}
+      </div>
     </div>
   );
 }

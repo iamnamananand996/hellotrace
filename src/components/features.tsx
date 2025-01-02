@@ -124,17 +124,24 @@ function FeatureCard({
     <div
       onMouseEnter={onHover}
       className={`
-        rounded-3xl p-8 bg-[#15171e] backdrop-blur-sm
-        transition-all duration-300 hover:bg-[#15171e] cursor-pointer
+        relative rounded-3xl p-[1px]  
         ${
           highlighted
-            ? "ring-1 ring-purple-500/50 shadow-[0px_0px_10px_#8c45ff]"
-            : ""
+            ? "bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500"
+            : "bg-transparent"
         }
+        transition-all duration-300 cursor-pointer
       `}
     >
-      <h2 className="text-2xl font-semibold text-white mb-3">{title}</h2>
-      <p className="text-gray-400 mb-4">{description}</p>
+      <div
+        className={`
+          rounded-3xl p-8 bg-[#15171e] backdrop-blur-sm
+          transition-all duration-300 hover:bg-[#1a1c24]
+        `}
+      >
+        <h2 className="text-2xl font-semibold text-white mb-3">{title}</h2>
+        <p className="text-gray-400 mb-4">{description}</p>
+      </div>
     </div>
   );
 }

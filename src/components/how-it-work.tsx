@@ -79,22 +79,24 @@ export default function HowItWorks() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col items-center p-6 bg-white shadow-[0px_0px_30px_#8c45ff] rounded-2xl hover:shadow-md transition-shadow"
+              className="bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 rounded-2xl p-0.5"
             >
-              <div className="relative mb-6">
-                <div className="w-16 h-16 bg-gray-200 rounded-xl flex items-center justify-center">
-                  {feature.icon}
+              <div className="flex flex-col items-center p-6 bg-white shadow-[0px_0px_30px_#8c45ff] rounded-2xl hover:shadow-md transition-shadow">
+                <div className="relative mb-6">
+                  <div className="w-16 h-16 bg-gray-200 rounded-xl flex items-center justify-center">
+                    {feature.icon}
+                  </div>
+                  <div className="absolute -right-1 -bottom-1 w-6 h-6 bg-gray-800 text-white rounded-full flex items-center justify-center text-sm">
+                    {index + 1}
+                  </div>
                 </div>
-                <div className="absolute -right-1 -bottom-1 w-6 h-6 bg-gray-800 text-white rounded-full flex items-center justify-center text-sm">
-                  {index + 1}
-                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-gray-400 leading-relaxed">
-                {feature.description}
-              </p>
             </div>
           ))}
         </div>

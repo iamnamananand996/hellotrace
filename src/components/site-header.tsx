@@ -32,7 +32,7 @@ export default function SiteHeader() {
             <section className={"max-md:hidden"}>
               <nav className={"flex gap-8 items-center text-sm"}>
                 <Link
-                  href={"/"}
+                  href={"https://hellotrace.app/"}
                   className={"text-white/70 hover:text-white transition"}
                 >
                   Product
@@ -50,7 +50,7 @@ export default function SiteHeader() {
                   Pricing
                 </Link>
                 <Link
-                  href={"https://www.hellotrace.io/company"}
+                  href={"/company"}
                   className={"text-white/70 hover:text-white transition"}
                 >
                   Company

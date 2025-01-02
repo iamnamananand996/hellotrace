@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { clsx } from "clsx";
+import SiteFooter from "@/components/site-footer";
+import SiteHeader from "@/components/site-header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +28,11 @@ export default function RootLayout({
           676efcdab57ceddd2b288928,676efcb4d5900592054c546c
         </script>
       </head>
-      <body className={clsx(inter.className, "antialiased")}>{children}</body>
+      <body className={clsx(inter.className, "antialiased")}>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }

@@ -4,7 +4,7 @@ import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 export default function SiteFooter() {
   return (
-    <footer className=" text-white pb-8 border-t-2">
+    <footer className=" text-white pb-8 border-t-[1px]">
       {/* Curved edge */}
 
       <div className="container mx-auto px-4 py-32">
